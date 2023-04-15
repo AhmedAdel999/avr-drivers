@@ -17,8 +17,8 @@
 #define PIND   (u8 *) 0x30
 
 
-static u8 volatile * PORT[] = {PORTA, PORTB, PORTC, PORTD};
-static u8 volatile * DDR[] = {DDRA, DDRB, DDRC, DDRD};
-static u8 volatile * PIN[] = {PINA, PINB, PINC, PIND};
+u8 volatile * PORT[] = {PORTA, PORTB, PORTC, PORTD};
+u8 volatile * DDR[] = {DDRA, DDRB, DDRC, DDRD};
+u8 volatile * PIN[] = {PINA, PINB, PINC, PIND};
 
 #endif /* DIO_H */
