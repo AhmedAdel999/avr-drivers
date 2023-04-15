@@ -10,8 +10,7 @@ int main(void)
     
     while(1) 
     {
-        DIO_SET_PIN(A, pin0);
+		DIO_TOGGLE_PIN(A, pin0);
         _delay_ms(500);
-		DIO_CLEAR_PIN(A, pin0)
     }
 }
