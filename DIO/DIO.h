@@ -1,9 +1,9 @@
+#define PORTA  (u8 *) 0x3B
 #ifndef DIO_H
 #define DIO_H
 
 #include "DATA_TYPES.h"
 
-#define PORTA  (u8 *) 0x3B
 #define DDRA   (u8 *) 0x3A
 #define PINA   (u8 *) 0x39
 #define PORTB  (u8 *) 0x38
@@ -17,8 +17,8 @@
 #define PIND   (u8 *) 0x30
 
 
-u8 volatile * PORT[] = {PORTA, PORTB, PORTC, PORTD};
-u8 volatile * DDR[] = {DDRA, DDRB, DDRC, DDRD};
-u8 volatile * PIN[] = {PINA, PINB, PINC, PIND};
+volatile u8 * PORT[] = {PORTA, PORTB, PORTC, PORTD};
+volatile u8 * DDR[] = {DDRA, DDRB, DDRC, DDRD};
+volatile u8 * PIN[] = {PINA, PINB, PINC, PIND};
 
 #endif /* DIO_H */

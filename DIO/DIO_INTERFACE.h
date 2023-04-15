@@ -2,6 +2,7 @@
 #define DIO_INTERFACE_H
 
 #include "DATA_TYPES.h"
+#include "DIO.h"
 
 enum{A, B, C, D};
 enum{pin0, pin1, pin2, pin3, pin4, pin5, pin6, pin7};
