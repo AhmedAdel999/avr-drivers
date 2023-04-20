@@ -28,3 +28,8 @@ u8 DIO_GET_PIN(u8 port, u8 pin)
 {
 	return ((*PIN[port]) & (1 << pin)) >> pin;
 }
+
+u8 DIO_SET_PORT(u8 port, u8 value)
+{
+	*PORT[port] = value;
+}
