@@ -1,4 +1,6 @@
 #include "DIO_INTERFACE.h"
+#include "DIO.h"
+
 
 void DIO_SET_PIN_DIRECTION(u8 port, u8 pin, u8 direction)
 {
@@ -29,7 +31,7 @@ u8 DIO_GET_PIN(u8 port, u8 pin)
 	return ((*PIN[port]) & (1 << pin)) >> pin;
 }
 
-u8 DIO_SET_PORT(u8 port, u8 value)
+void DIO_SET_PORT(u8 port, u8 value)
 {
 	*PORT[port] = value;
 }
