@@ -1,8 +1,6 @@
 #ifndef LCD_INTERFACE.h
 #define LCD_INTEFACE.h
 
-#include "../DIO/DIO_INTERFACE.h"
-
 #define u8 unsigned char
 
 #define OUTPUT_PORT A
